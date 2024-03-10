@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FWAR</title>
+<meta charset = "utf-8">
+<style>
+	body {
+		background-color: #FFD131;
+
+	}
+	div {
+		background-color: #ffe99b;
+		padding: 20px;
+		font-family: sans-serif;
+		font-weight: bold;
+		text-align: center;
+		max-width:  500px;
+		border-radius: 5px;
+		margin : 0 auto;
+    margin-top: 30px
+	}
+	p{
+		font-size: 3em;
+		margin: 20px;
+	}
+	button {
+		font-size : 16px;
+		font-weight: bold;
+		padding: 10px;
+		border: 4px solid #000;
+	}
+	button:hover {
+		background-color: #9FFFE3;
+	}
+	button:active {
+		background-color: #000;
+		color: #FFF;
+	}
+</style>
+</head>
+<body style = backgroundcolor:#F5F5F5;color:#008080;>
+
+<h1 style = "color:#cc0000">FWAR GEOTECH</h1>
+  
+  
+<p>Welcome to Official Fwar geotech Website
+	you are at the right place for all your 
+	geospatial solutions that is GIS,remote sensing and
+	survey works
+</p>
+<p> call for a free quote for your spatial problems:
+	<strong>0782424154</strong>
+</p>
+<h2>Our Services</h2>
+<div>
+<oi>
+	<li>Spatial Analysis</li>
+	<li>Web Mapping</li>
+	<li>Remote Sensing</li>
+	<li>Surveying</li>
+	<li>Urban Planning</li>
+	<li>Database Connections</li>
+</oi>
+<button>click me </button>
+</div>
+<script>
+	//accessing the elements from our page
+	var buttonElement = document.querySelector("button");
+	var textElement = document.querySelecto("p");
+	//listening to a click event on the button
+	buttonElement.addEventListener("click",changeText,false);
+	// what gets calledwhen the button is clicked
+	function changeText(e){
+		textElement.innerText="Welcome to FwarGeoT"
+
+	}
+
+
+<div class="container">
+	<form action="" id="loginForm">
+	<h3>Login</h3>
+	<input type="text"
+	id = "username" class="form-control" placeholder="Enter your Username....">
+	<input type = "password" id="password" class="form-control" placeholder = "Enter your Password...">
+	<button type = "submit">Submit</button>
+</form>
+</div>
+
+let loginForm = document.getElemetById("loginForm")
+loginForm.addEventListener("submit",(e)=>{
+	e.preventDefault();
+
+	let username = document.getElementById("username");
+	let password = document.getElementById("password");
+
+	if (username.value == || pasword.value == ""){
+		alert("Ensure you put a value in both fields!")
+
+	}else{
+		alert("This form has been successfully submitted");
+		console.log('This form has a username of ${username.value} and password of ${password.value}');
+		username.value ="";
+		password.valuen= "";
+	}
+})
+</script>
+
+For Further Inquiries send your Message to
+<a href="mailto:abrahamomo4@gmail.com">abrahamomo4@gmail.com</a>
+</body>
+<footer>
+	<small><i>Copyright &copy; 2023 FwarGeoT</i></small>
+</footer>
+</html>
